@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padrões Web</title>
+
+<!-- ESTILO DIRETAMENTE NO HTML -->    
+<style>
+body{
+    margin: 0;
+    padding: 0;
+   
+}
+
+.nav_1{
+    background-color: #ffffff;
+    text-align: center;
+    display: flexbox;
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.listaNav2 li{
+   display: inline-block;
+   align-items: center;
+   margin-right: 10px;
+}
+
+.listaNav2 a{
+    text-decoration: none;
+ }
+
+ .containerConteudos{
+
+    color: rgb(0, 0, 0);
+    display: table-row-group;
+    grid-column: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: center;
+    flex: 1;
+
+ }
+
+ .title_html, .title_css{
+    text-align: center;
+ }
+
+.texts-bloco1{
+    display: flexbox;
+    display: flex;
+    width: 80%;
+    height: 80%;
+   
+}
+
+ .containerBloco1{
+    background-color: #205d86;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+ }
+
+.img-bloco1{
+  display: flex;
+  width: 750px;
+  height: 700px;
+  margin-right: 1px;
+  object-fit: cover;
+}
+
+.texts-bloco1{
+   display: flex;
+   flex-direction: column; 
+   flex: 1; 
+}
+
+.containerBloco2{
+    color: rgb(0, 0, 0);
+    display: table-row-group;
+    grid-column: 3;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: center;
+    flex: 1;
+}
+
+.columnBloco1, .columnBloco2, .columnForm {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    
+}
+
+.clear {
+    clear: both;
+    
+}
+
+.columnBloco1{
+    background-color: #0b5688;
+
+}
+
+.columnBloco2{
+    background-color: #0b5688;
+}
+
+.columnForm{
+  border: 1px solid #000000; /* Adicione uma borda de 1px sólida com cor cinza */
+  padding: 20px; /* Espaçamento interno para melhorar a aparência */
+}
+
+
+</style>
+
+</head>
+
+<div>
+    <nav class="nav_1">
+        <ul class="listaNav2">
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">HTML</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">CSS</a></li>
+            <li><a href="#">Glossário</a></li>
+        </ul>
+    </nav>
+</div> 
+
+<div class="containerBloco1">
+    
+    <div class="containerConteudos">
+        <div>
+            <img class="img-bloco1" src="https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148819604.jpg?w=900&t=st=1691347161~exp=1691347761~hmac=0c3872775f50076329fde534d803b89063ede77814fe4bbd5dfd086f2df1fcdc">
+</div>
+           
+ <div class="texts-bloco1"> 
+    <br>         
+        <h1 class="title_html">Você conhece o HTML?</h1>
+        <p class="text_html">
+            HTML (HyperText Markup Language ou Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada para criar
+            páginas web e permite você pode estruturar o conteúdo da página, como títulos, parágrafos, listas, imagens e links. No
+            início, quando o HTML se popularizou, havia uma falta de padronização que causou muita confusão entre os
+            desenvolvedores. Então, em 1990, o HTML foi formalizado como linguagem e estabelecendo padrões. Em 1994, Tim Berners-Lee
+            criou o Consórcio World Wide Web (W3C), composto por cerca de 400 membros, com o objetivo principal de padronizar a
+            World Wide Web, também conhecida como web ou rede mundial de computadores.
+        </p>
+  
+<hr>
+
+        <h1 class="title_css">Você conhece o CSS?</h1>
+        <p class="text_css">
+            CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada em conjunto com o HTML para definir a aparência e o
+            design de páginas web. Com o CSS, você pode controlar o layout, as cores, as fontes, as animações e outros aspectos
+            visuais de um documento HTML, permitindo uma personalização completa da aparência do conteúdo.
+            O CSS funciona selecionando elementos HTML e aplicando regras de estilo a eles. As regras de estilo são definidas em
+            blocos de declarações que consistem em um seletor e uma propriedade com o valor correspondente. O seletor indica qual
+            elemento HTML será afetado e a propriedade define qual característica desse elemento será estilizada.
+        </p>
+
+    </div> 
+
+</div>
+</div>
+
+<div class="columnBloco1">
+    <!-- Coluna Esquerda -->
+    <img class="img-blocoesq1" src="">
+</div>
+  
+  <div class="columnForm">
+    <!-- Coluna Central - Formulário -->
+    <form>
+      <label for="campo1">Nome:</label>
+      <br>
+      <input type="text" id="campo1" name="campo1" required><br><br>
+  
+      <label for="campo2">Endereço:</label>
+      <br>
+      <input type="text" id="campo2" name="campo2" required><br><br>
+  
+      <label for="campo3">E-mail:</label>
+      <br>
+      <input type="text" id="campo3" name="campo3" required><br><br>
+  
+      <label for="areaTexto">Mensagem</label>
+      <br>
+      <textarea id="areaTexto" name="areaTexto" rows="4" cols="50" required></textarea><br><br>
+  
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+  
+  <div class="columnBloco2">
+    <!-- Coluna Direita -->
+    <img class="img-bloco3" src="">
+
+  </div>
+  
+  <div class="clear"></div>
+    
+ </body>
+
+</html>
