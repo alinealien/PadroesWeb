@@ -1,19 +1,50 @@
 /*Utilizando váriaveis no CSS*/
-/**/
+/*Se quiser fazer alguma alteração ao longo do site, em vez de valor fixo, coloca-se em variaveis*/
+/*assim, poderá ir alterando a variavel vocÊ altera todos os valores depois*/
+:root{
+    --cor-1: #1d44af;
+    --cor-2: #0077ff;
+    --cor-3: #fff4d7;
+    --cor-4: #244f52;
+}
 
 *{
-    /*Para evitar que seja inserido pelo browser uma (padding, margin, border)*/
-        padding: 0;
-        border: 0;
-        margin: 0;
-    }
-    body{
-        background-color: #eee;
-    }
-    #main{
-        width: 1200px;
-        min-height: 800px;
-        box-shadow: 0 0 15px #00000070;
-        background-color: #eee;
-        margin: auto;
-    }
+/*Para evitar que seja inserido pelo browser uma (padding, margin, border)*/
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #eee;
+}
+
+#main{
+    width: 1200px;
+    min-height: 800px;
+    box-shadow: 0 0 15px #00000070;
+    background-color: #eee;
+    margin: auto;
+}
+
+header{
+    background-color: var(--cor-1);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.logo h1{
+    margin: 0 30px;
+}
