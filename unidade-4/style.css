@@ -43,8 +43,48 @@ header a{
     color: #fff;
     padding: 5px;
     text-decoration: none;
+    margin: 0 20px;
 }
 
 .logo h1{
     margin: 0 30px;
+}
+
+.search input{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 14px;
+    background-color: #00000030;
+    color: #ffffff70;
+}
+
+/*situação do input [::nome] é a regra*/
+.search input::placeholder{
+color: #ffffff80;
+}
+
+.banner{
+    background-image: url(midia/banner.jpg);
+    background-size:cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px;
+    box-shadow: 0 0 1000px var(--cor-4) inset;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card{
+    text-align: center;
+    padding: 20px;
+    background-color: var(--cor-3);
+    box-shadow: 0 4px 8px #00000070;
+}
+
+.card img{
+    max-height: 200px;
 }
