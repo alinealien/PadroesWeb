@@ -63,6 +63,10 @@ header a{
 color: #ffffff80;
 }
 
+.search input:focus{
+    outline: 0;
+}
+
 .banner{
     background-image: url(midia/banner.jpg);
     background-size:cover;
@@ -70,6 +74,10 @@ color: #ffffff80;
     color: #fff;
     padding: 50px;
     box-shadow: 0 0 1000px var(--cor-4) inset;
+}
+
+.banner2{
+    background-image: url(midia/banner2.jpg);
 }
 
 .card-container{
@@ -87,4 +95,15 @@ color: #ffffff80;
 
 .card img{
     max-height: 200px;
+}
+
+.text-area{
+display: flex;
+justify-content: space-between;
+margin: 20px;
+padding: 20px;
+}
+
+.coluna{
+flex: 1;
 }
