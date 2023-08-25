@@ -2,9 +2,9 @@
 
 Repositório de estudos e projetos desenvolvidos durante a disciplina de **Padrões Web** do curso de Tecnologia em Sistemas para Internet do IFRN.
 
-### Unidade I
+## Unidade I
 
-#### **História e Arquitetura da Internet**
+### **História e Arquitetura da Internet**
 
 A história da internet começa com a criação dos mainframes na década de 1950. Estes eram grandes computadores usados por empresas e governos para processar dados, principalmente bancários e científicos. Apesar de inicialmente serem caros e inacessíveis à maioria das pessoas, a evolução tecnológica os tornou mais acessíveis e com maior capacidade.
 
@@ -14,7 +14,7 @@ A adoção generalizada da Ethernet nas décadas seguintes impulsionou o crescim
 
 #### 
 
-#### ArpaNET e a crise dos mísseis
+### ArpaNET e a crise dos mísseis
 
 Em 1969, a Agência de Projetos de Pesquisa Avançada do Departamento de Defesa dos Estados Unidos criou a ArpaNET, uma rede de computadores destinada a permitir a comunicação entre cientistas e pesquisadores em todo o país.
 
@@ -23,7 +23,7 @@ Na década de 1980, a ArpaNET se expandiu, formando a base da atual Internet. Du
 Na década de 1970, redes como Cyclades e NPL surgiram globalmente. Em 1978, elas se uniram à ArpaNET, formando uma rede global. Essa expansão fez da Internet crucial para comunicação, pesquisa e comércio globais. A fusão trouxe tecnologias cruciais, como o TCP/IP, padronizando a comunicação online. O TCP/IP divide dados em pacotes para entrega segura. Nos anos 1990, a Internet se democratizou com a World Wide Web (WWW), criada por Tim Berners-Lee do CERN. Isso permitiu acesso e compartilhamento intuitivos, graças a protocolos como o HTTP e a linguagem HTML.
 
 
-#### Arquitetura da Internet
+### Arquitetura da Internet
 
 A internet é uma arquitetura complexa que interliga dispositivos eletrônicos em todo o mundo. Ela se baseia em clientes (dispositivos usados pelos usuários) e servidores (que fornecem informações). A interação entre eles é central. Quando um cliente faz uma solicitação, um servidor responde, gerando tráfego de rede. Roteadores encaminham dados seguindo regras TCP/IP, cruciais para a comunicação. A arquitetura TCP/IP tem 4 camadas: Aplicação (navegadores, e-mail), Transporte (TCP confiável, UDP rápido), Internet (endereçamento e roteamento) e Rede (transmissão física).
 
@@ -32,7 +32,7 @@ A camada TCP garante envio confiável, dividindo dados em pacotes. A camada de I
 No lado do servidor, linguagens como PHP e Python são usadas, enquanto JavaScript domina o lado do cliente, trazendo dinamismo. A arquitetura TCP/IP, controle de tráfego, segurança, roteadores, endereçamento IP e criação de páginas web são partes essenciais desse sistema.
 
 
-#### Marcação de Texto e Sintaxe HTML
+### Marcação de Texto e Sintaxe HTML
 
 Navegadores da Web interpretam HTML, CSS e JavaScript para mostrar páginas visualmente agradáveis. Exemplos são Chrome, Firefox, Edge, Safari e Opera. Eles permitem inserção de URLs, navegação por links, visualização de imagens, conteúdo multimídia e têm recursos como preenchimento automático, bloqueio de anúncios e extensões personalizadas. Navegadores evoluíram com suporte a HTML5, CSS3 e WebGL, tornando-se mais rápidos, seguros e versáteis para acessar serviços online, como redes sociais, bancos e streaming. No entanto, há alternativas para explorar a web.
 
@@ -60,7 +60,7 @@ apps web mais interativos. Junto ao CSS e JavaScript, é fundamental para criar 
 
 ______________
 
-### Unidade II
+## Unidade II
 
 ### HTML: HyperText Markup Language
 
@@ -145,6 +145,9 @@ Devido a uma limitação em meu editor, por enquanto, retirei os símbolos de da
   ```
 
   Levará o usuário para o endereço "<https://www.example.com>".
+
+
+
 
 
 - #### Imagens e Vídeos em HTML
