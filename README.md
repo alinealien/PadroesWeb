@@ -60,11 +60,72 @@ apps web mais interativos. Junto ao CSS e JavaScript, é fundamental para criar 
 
 ______________
 
-#### Unidade II
+### Unidade II
+
+### HTML: HyperText Markup Language
+
+HTML (HyperText Markup Language) é uma linguagem de marcação para criar páginas web, permitindo estruturar títulos, parágrafos, listas, imagens elinks. Inicialmente, a falta de padronização trouxe confusão aos desenvolvedores. Em 1990, o HTML foi formalizado e padronizado. Em 1994,Tim Berners-Lee fundou o W3C para padronizar a World Wide Web (web ou internet).
+
+O W3C é um consórcio global que reúne equipe integral, afiliados e público para criar padrões web. Liderado por Tim Berners-Lee e CEO Jeffrey Jaffe, visa desenvolver protocolos e diretrizes para impulsionar o potencial da web.
+
+- #### Estrutura do HTML
+
+  HTML usa marcações ("<" e ">") para definir estrutura e formato. Tags como "<h1>" para títulos e "<p>" para parágrafos são exemplos. Editores modernos consideram tamanhos de tela e idiomas, adicionando tags meta.
 
 
 
-Objetivos da Unidade:
+- #### Formatação de Texto
+
+  O formato e destaque do texto em páginas web influenciam a experiência do usuário. A linguagem HTML oferece marcações para aplicar estilos, resultando em apresentação atraente e legível. O site w3schools.com é uma fonte útil para explorar formatação e marcação HTML, com uma biblioteca completa de tags e informações detalhadas. Isso permite aprender sobre novas tags, suas funções e como usá-las no código HTML.
+
+| Marcação                       | Função                                   |
+| ------------------------------ | ---------------------------------------- |
+| <b> ... </b>                   | Coloca o texto em negrito                |
+| <i> ... </i>                   | Coloca o texto em itálico                |
+| <em>                           | Nova recomendação, faz o mesmo que a tag <i> |
+| <strong>                       | Nova recomendação, faz o mesmo que a tag <b> |
+| <u> ... </u>                   | Sublinha o texto                         |
+| <sup> ... </sup>               | Eleva o texto (sobrescrito)              |
+| <sub> ... </sub>               | Baixa o texto (subscrito)                |
+| <del> ... </del>               | Exibe o texto como tachado (riscado)     |
+| <mark> ... </mark>             | Marca o texto com destaque               |
+| <blockquote> ... </blockquote> | Citação em bloco                         |
+| <ins>                          | Coloca um traço sob o texto para marcar que o referido trecho foi incluindo no texto original |
+| <code> ... </code>             | Formata o texto como código              |
+| <small>                        | Coloca o texto em destaque, diminuindo seu tamanho em relação ao tamanho padrão |
+| <pre> ... </pre>               | Preserva a formatação de texto (pré-formatado) |
+| <abbr> ... </abbr>             | Define uma abreviação                    |
+
+- #### Hyperlinks em HTML
+
+  ​
+
+
+- #### Imagens e Vídeos em HTML
+
+
+
+- #### Listas em HTML
+
+
+
+
+
+### CSS: Cascading Style Sheets
+
+- #### ID e Classes em CSS
+
+
+
+- #### Príncipais Regras CSS
+
+
+
+
+
+
+
+##### Objetivos da Unidade:
 
 - HTML - Resumo
 - Estruturas do HTML
