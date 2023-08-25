@@ -70,41 +70,31 @@ O W3C é um consórcio global que reúne equipe integral, afiliados e público p
 
 #### Estrutura do HTML
 
-HTML usa marcações ("<" e ">") para definir estrutura e formato. Tags como 
-
-```html
-<h1>
-```
-
-para títulos e 
-
-```html
-<p>
-```
-
-para parágrafos são exemplos. Editores modernos consideram tamanhos de tela e idiomas, adicionando tags meta.
+HTML usa marcações ("<" e ">") para definir estrutura e formato. Tags como  `<h1>`para títulos e  x `<p>` para parágrafos são exemplos. Editores modernos consideram tamanhos de tela e idiomas, adicionando tags meta.
 
 #### Formatação de Texto
 
-O formato e destaque do texto em páginas web influenciam a experiência do usuário. A linguagem HTML oferece marcações para aplicar estilos, resultando em apresentação atraente e legível. O site w3schools.com é uma fonte útil para explorar formatação e marcação HTML, com uma biblioteca completa de tags e informações detalhadas. Isso permite aprender sobre novas tags, suas funções e como usá-las no código HTML.
+O formato e destaque do texto em páginas web influenciam a experiência do usuário. A linguagem HTML oferece marcações para aplicar estilos, resultando em apresentação atraente e legível. 
 
-| Marcação   | Função                                   |
-| ---------- | ---------------------------------------- |
-| b          | Coloca o texto em negrito                |
-| i          | Coloca o texto em itálico                |
-| em         | Nova recomendação, faz o mesmo que a tag i |
-| strong     | Nova recomendação, faz o mesmo que a tag b |
-| u          | Sublinha o texto                         |
-| sup        | Eleva o texto (sobrescrito)              |
-| sub        | Baixa o texto (subscrito)                |
-| del        | Exibe o texto como tachado (riscado)     |
-| mark       | Marca o texto com destaque               |
-| blockquote | Citação em bloco                         |
-| ins        | Coloca um traço sob o texto para marcar que o referido trecho foi incluindo no texto original |
-| code       | Formata o texto como código              |
-| small      | Coloca o texto em destaque, diminuindo seu tamanho em relação ao tamanho padrão |
-| pre        | Preserva a formatação de texto (pré-formatado) |
-| abbr       | Define uma abreviação                    |
+O site w3schools.com é uma fonte útil para explorar formatação e marcação HTML, com uma biblioteca completa de tags e informações detalhadas. Isso permite aprender sobre novas tags, suas funções e como usá-las no código HTML.
+
+| Marcação       | Função                                   |
+| -------------- | ---------------------------------------- |
+| `<b>`          | Coloca o texto em negrito                |
+| `<i>`          | Coloca o texto em itálico                |
+| `<em>`         | Nova recomendação, faz o mesmo que a tag i |
+| `<strong>`     | Nova recomendação, faz o mesmo que a tag b |
+| `<u>`          | Sublinha o texto                         |
+| `<sup>`        | Eleva o texto (sobrescrito)              |
+| `<sub>`        | Baixa o texto (subscrito)                |
+| `<del>`        | Exibe o texto como tachado (riscado)     |
+| `<mark>`       | Marca o texto com destaque               |
+| `<blockquote>` | Citação em bloco                         |
+| `<ins>`        | Coloca um traço sob o texto para marcar que o referido trecho foi incluindo no texto original |
+| `<code>`       | Formata o texto como código              |
+| `<small>`      | Coloca o texto em destaque, diminuindo seu tamanho em relação ao tamanho padrão |
+| `<pre>`        | Preserva a formatação de texto (pré-formatado) |
+| `<abbr>`       | Define uma abreviação                    |
 
 ##### Atenção:
 
@@ -125,19 +115,7 @@ Devido a uma limitação em meu editor, por enquanto, retirei os símbolos de da
 
 Os hipertextos, também conhecidos como hyperlinks ou simplesmente links, são elementos 
 essenciais no HTML para conectar e navegar entre diferentes páginas da web. Eles permitem que os usuários cliquem em um texto ou imagem e sejam direcionados para outra página, um local específico na mesma página ou até mesmo para um recurso externo. No HTML, os hipertextos são criados 
-usando a tag 
-
-```html
-<a>
-```
-
-Essa tag é acompanhada pelo atributo 
-
-```html
-href
-```
-
-Que indica o destino do link, ou seja, a URL da página para a qual o usuário será redirecionado ao clicar no link. Por exemplo:
+usando a tag `<a>`. Essa tag é acompanhada pelo atributo `href` que indica o destino do link, ou seja, a URL da página para a qual o usuário será redirecionado ao clicar no link. Por exemplo:
 
 ```html
  <a href="<https://www.example.com> "> Clique aqui </a> criará um link com o texto "Clique aqui" 
@@ -151,13 +129,7 @@ Os hipertextos podem ter atributos adicionais, como "target", que determina onde
 intuitiva e facilitar a descoberta de conteúdo relevante. Além dos Hyperlinks, existem os Links de âncora (*Anchor Links*), também conhecidos como "links internos" ou "links de navegação interna". Eles são elementos em HTML que permitem aos usuários acessarem seções específicas de uma mesma página. Eles são úteis quando se tem um conteúdo longo, como uma página com vários tópicos ou um artigo 
 extenso, e deseja-se permitir que os usuários naveguem diretamente para uma seção específica, sem precisar rolar toda a página.
 
-Para criar um link de âncora, você precisa adicionar uma tag de âncora à seção de destino e referenciá-la no link. Primeiro, coloque uma tag  
-
-```html
-<a>
-```
-
-com um atributo "name" ou "id" na seção para a qual deseja criar o link de âncora. Por exemplo: 
+Para criar um link de âncora, você precisa adicionar uma tag de âncora à seção de destino e referenciá-la no link. Primeiro, coloque uma tag  `<a>` com um atributo "name" ou "id" na seção para a qual deseja criar o link de âncora. Por exemplo: 
 
 ```html
 <h2 id="secao1">Seção 1</h2> ou <div id="secao2">Conteúdo da Seção 2</div>
@@ -177,7 +149,7 @@ Os links de âncora são particularmente úteis em páginas longas, como tutoria
 
 #### Imagens e Vídeos em HTML
 
-A inserção de imagens e vídeos no HTML é uma forma essencial de enriquecer e visualmente atrair as páginas da web. Para inserir uma imagem, você pode usar a tag <img>. Essa tag requer o atributo obrigatório "src", que especifica o caminho ou URL da imagem. Por exemplo: 
+A inserção de imagens e vídeos no HTML é uma forma essencial de enriquecer e visualmente atrair as páginas da web. Para inserir uma imagem, você pode usar a tag `<img>`. Essa tag requer o atributo obrigatório "src", que especifica o caminho ou URL da imagem. Por exemplo: 
 
 ```html
 <img src="caminho/para/imagem.jpg" alt="Descrição da imagem">
@@ -186,12 +158,9 @@ A inserção de imagens e vídeos no HTML é uma forma essencial de enriquecer e
 O atributo "alt" fornece uma descrição alternativa para a imagem, que é exibida caso a imagem não 
 possa ser carregada ou para fins de acessibilidade.
 
-Para inserir vídeos, você pode usar a tag <video>. Essa tag permite a reprodução de vídeos diretamente na página. Você precisa definir o atributo "src" com o caminho ou URL do vídeo e pode especificar outros 
-atributos, como "width" e "height", para definir as dimensões do vídeo 
-na página. Por exemplo: 
- 
+Para inserir vídeos, você pode usar a tag `<video>`. Essa tag permite a reprodução de vídeos diretamente na página. Você precisa definir o atributo "src" com o caminho ou URL do vídeo e pode especificar outros atributos, como "width" e "height", para definir as dimensões do vídeo na página. Por exemplo: 
 
-```
+```html
    <video src="caminho/para/video.mp4" width="500" height="300" controls></video>
 ```
 
@@ -205,7 +174,7 @@ O atributo "controls" mostra os controles de reprodução do vídeo. Vídeos de 
 
 No HTML, é possível criar listas ordenadas e não ordenadas para estruturar informações de maneira organizada. As listas aprimoram a compreensão e legibilidade do conteúdo.
 
-Para criar uma lista não ordenada, utilize a tag <ul> para representar a lista e marque cada item com <li>. Por exemplo:
+Para criar uma lista não ordenada, utilize a tag `<ul>` para representar a lista e marque cada item com `<li>`. Por exemplo:
 
 ```html
 <ul>
@@ -217,7 +186,7 @@ Para criar uma lista não ordenada, utilize a tag <ul> para representar a lista 
 
 Este código resultará em uma lista não ordenada com os itens "Item 1", "Item2" e "Item 3", sendo exibidos com pontos ou marcadores como vemos na imagem acima.
 
-Para criar uma lista ordenada, use a tag <ol> para representar a lista e marque cada item com <li>. Veja o exemplo abaixo:
+Para criar uma lista ordenada, use a tag `<ol>` para representar a lista e marque cada item com `<li>`. Veja o exemplo abaixo:
 
 ```html
 <ol>
@@ -227,7 +196,9 @@ Para criar uma lista ordenada, use a tag <ol> para representar a lista e marque 
 </ol>
 ```
 
-Este código gera uma lista ordenada com os itens "Item 1", "Item 2" e "Item 3", numerados sequencialmente. Também é possível criar listas aninhadas, com uma lista dentro de outra, ao aninhar as tags <ul> ou <ol> e <li>. Exemplo:
+Este código gera uma lista ordenada com os itens "Item 1", "Item 2" e "Item 3", numerados sequencialmente. Também é possível criar listas aninhadas, com uma lista dentro de outra, ao aninhar as tags `<ul>, <ol>, <li>`
+
+Exemplo:
 
 ```html
 <ol>
@@ -241,7 +212,7 @@ Este código gera uma lista ordenada com os itens "Item 1", "Item 2" e "Item 3",
 </ol>
 ```
 
-Aqui, temos uma lista não ordenada com três itens. O segundo item contém uma lista não ordenada aninhada com os itens "Item 2.1" e "Item 2.2". As listas em HTML organizam informações de modo eficiente e claro. As tags <ul>, <ol> e <li> são cruciais para formatar listas, desde as simples até as complexas com aninhamentos. Posteriormente, aprenderemos a transformar essas listas em menus interativos para páginas. Exemplo:
+Aqui, temos uma lista não ordenada com três itens. O segundo item contém uma lista não ordenada aninhada com os itens "Item 2.1" e "Item 2.2". As listas em HTML organizam informações de modo eficiente e claro. As tags `<ul>, <ol> e <li>` são cruciais para formatar listas, desde as simples até as complexas com aninhamentos. Posteriormente, aprenderemos a transformar essas listas em menus interativos para páginas. Exemplo:
 
 ```html
 <ul>
@@ -276,8 +247,9 @@ p{
 /*Color é a propriedade e black é o valor*/
 ```
 
-Neste exemplo, o seletor "p" seleciona todas as tags <p> do HTML, a propriedade "color" determina a cor da fonte e o valor "red" determina que a cor vai ser vermelha. Ou seja, a declaração desta regra diz que 
-todo o texto que estiver em uma tag <p> deverá ser por padrão vermelho.
+Neste exemplo, o seletor "p" seleciona todas as tags `<p>` do HTML, a propriedade "color" determina a cor da fonte e o valor "red" determina que a cor vai ser vermelha. Ou seja, a declaração desta regra diz que todo o texto que estiver em uma tag `<p>`
+
+deverá ser por padrão vermelho.
 
 
 Em CSS, IDs e classes são seletores para aplicar estilos a elementos específicos ou grupos em uma página web. IDs identificam elementos únicos, enquanto classes agrupam elementos similares. Para aplicar 
