@@ -198,11 +198,63 @@ na página. Por exemplo:
 
 O atributo "controls" mostra os controles de reprodução do vídeo. Vídeos de plataformas como YouTube podem ser incorporados usando código fornecido, geralmente um iframe. Adicionar imagens e vídeos no HTML é eficaz para transmitir informações visualmente, tornando as páginas web mais atrativas e interativas.
 
-**Lembre-se** de otimizar imagens e vídeos para a web, ajustando o tamanho do arquivo e a compatibilidade com navegadores. Adicionalmente, forneça descrições alternativas (atributo "alt") para imagens, melhorando acessibilidade e indexação em mecanismos de busca.
+**Lembre-se:** de otimizar imagens e vídeos para a web, ajustando o tamanho do arquivo e a compatibilidade com navegadores. Adicionalmente, forneça descrições alternativas (atributo "alt") para imagens, melhorando acessibilidade e indexação em mecanismos de busca.
 
 - #### Listas em HTML
 
+No HTML, é possível criar listas ordenadas e não ordenadas para estruturar informações de maneira organizada. As listas aprimoram a compreensão e legibilidade do conteúdo.
 
+Para criar uma lista não ordenada, utilize a tag <ul> para representar a lista e marque cada item com <li>. Por exemplo:
+
+```html
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+
+Este código resultará em uma lista não ordenada com os itens "Item 1", "Item2" e "Item 3", sendo exibidos com pontos ou marcadores como vemos na imagem acima.
+
+Para criar uma lista ordenada, use a tag <ol> para representar a lista e marque cada item com <li>. Veja o exemplo abaixo:
+
+```html
+<ol>
+  <li>Primeiro item</li>
+  <li>Segundo item</li>
+  <li>Terceiro item</li>
+</ol>
+```
+
+Este código gera uma lista ordenada com os itens "Item 1", "Item 2" e "Item 3", numerados sequencialmente. Também é possível criar listas aninhadas, com uma lista dentro de outra, ao aninhar as tags <ul> ou <ol> e <li>. Exemplo:
+
+```html
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <ul>
+    <li>Subitem 3.1</li>
+    <li>Subitem 3.2</li>
+  </ul>
+</ol>
+```
+
+Aqui, temos uma lista não ordenada com três itens. O segundo item contém uma lista não ordenada aninhada com os itens "Item 2.1" e "Item 2.2". As listas em HTML organizam informações de modo eficiente e claro. As tags <ul>, <ol> e <li> são cruciais para formatar listas, desde as simples até as complexas com aninhamentos. Posteriormente, aprenderemos a transformar essas listas em menus interativos para páginas. Exemplo:
+
+```html
+<ul>
+  <li>Item 1</li>
+  <li>
+    Item 2
+    <ul>
+      <li>Item 2.1</li>
+      <li>Item 2.2</li>
+    </ul>
+  </li>
+  <li>Item 3</li>
+</ul>
+```
 
 
 
@@ -210,15 +262,96 @@ O atributo "controls" mostra os controles de reprodução do vídeo. Vídeos de 
 
 - #### ID e Classes em CSS
 
+CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada em conjunto com o HTML para definir a aparência e o design de páginas web. Com o CSS, você pode controlar o layout, as cores, as fontes, as animações e outros aspectos visuais de um documento HTML, permitindo uma personalização completa da aparência do conteúdo.
 
+O CSS funciona selecionando elementos HTML e aplicando regras de estilo a eles. As regras de estilo são definidas em blocos de declarações que consistem em um seletor e uma propriedade com o valor correspondente. O seletor indica qual elemento HTML será afetado e a propriedade define qual característica desse elemento será estilizada. Podemos observar a estrutura básica do CSS no exemplo:
+
+```css
+/*Selector*/
+p{
+ /*Declaração*/
+  color: black;
+}
+/*Color é a propriedade e black é o valor*/
+```
+
+Neste exemplo, o seletor "p" seleciona todas as tags <p> do HTML, a propriedade "color" determina a cor da fonte e o valor "red" determina que a cor vai ser vermelha. Ou seja, a declaração desta regra diz que 
+todo o texto que estiver em uma tag <p> deverá ser por padrão vermelho.
+
+
+Em CSS, IDs e classes são seletores para aplicar estilos a elementos específicos ou grupos em uma página web. IDs identificam elementos únicos, enquanto classes agrupam elementos similares. Para aplicar 
+estilos a um ID, utilize "#" seguido do nome do ID, definido no HTML com o atributo "id". Por exemplo:
+
+```html
+<div id="meu-id">...</div>
+```
+
+Neste caso, apenas o elemento com o ID "meu-id" receberá a regra.
+
+Classes, por outro lado, são reutilizáveis. Defina-as no HTML com o atributo "class". As regras de classe podem ser aplicadas a várias tags com a mesma classe. Exemplo:
+
+```html
+<p class="destaque">...</p>
+<div class="destaque">...</div>
+```
+
+As duas tags acima compartilham a regra "destaque".
+
+**Quando há conflito de regras, a prioridade é definida por:**
+
+1. Regra aplicada via atributo "style";
+2. Regra aplicada via ID;
+3. Regra aplicada via classe;
+4. Regra aplicada via tag.
+
+Em um exemplo:
+
+```html
+<p id="minha-id" class="destaque" style="color: blue;">Paragrafo</p>
+```
+
+A cor será azul, pois a regra do atributo "style" tem maior prioridade. Quanto mais específica a regra, maior a prioridade.
+
+​                
 
 - #### Príncipais Regras CSS
 
+Com o CSS, é possível aplicar diversos estilos a textos, fontes, cores e fundos em páginas web. Para estilizar textos, você pode usar propriedades como "font-family" para definir a fonte utilizada, "font-size" para o tamanho do texto e "font-weight" para controlar a espessura da fonte:
 
+```css
+p {
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+}
+```
 
+Nesse exemplo, o parágrafo `<p>` terá o texto exibido em fonte Arial, tamanho de 16 pixels e em negrito. Além disso, você pode definir a cor do texto usando a propriedade "color". Por exemplo:
 
+```css
+p {
+  color: red;
+}
+```
 
+Nesse caso, o texto do parágrafo `<p>` será exibido na cor vermelha. Quanto ao background, você pode definir a cor de fundo de um elemento com a propriedade "background-color". Por exemplo:
 
+```css
+body {
+  background-color: #f2f2f2;
+}
+```
+
+Neste caso, o fundo da página inteira terá uma cor cinza claro definida pelo código hexadecimal "#f2f2f2". Além da cor, você pode adicionar uma imagem de fundo usando a propriedade "background-image". Por exemplo:
+
+```css
+css
+body {
+  background-image: url(caminho/para/imagem.jpg);
+}
+```
+
+Neste exemplo, a página terá uma imagem como fundo, onde "caminho/para/imagem.jpg" é o local e o nome da imagem. Lembre-se de que as definições de locais de arquivos seguem o modelo Unix, com "./" para a pasta atual e "../" para a pasta anterior. Nas próximas aulas, aprenderemos diversas formas de usar o CSS, fazer animações, trabalhar com áudio e vídeo, e criar formulários em HTML.
 
 ##### Objetivos da Unidade:
 
@@ -233,8 +366,17 @@ O atributo "controls" mostra os controles de reprodução do vídeo. Vídeos de 
 - Principais regras CSS
 
 
+_______________
 
-#### Unidade III
+## Unidade III
+
+
+
+
+
+
+
+##### Objetivos da Unidade:
 
 - Tabelas em HTML
 - Estrutura da tabela em HTML
@@ -247,8 +389,11 @@ O atributo "controls" mostra os controles de reprodução do vídeo. Vídeos de 
 - Rich Media: Áudio e Vídeo
 
 
-
 #### Unidade IV
+
+
+
+##### Objetivos da Unidade:
 
 - Organizando o Layout de um site
 - Flexbox
