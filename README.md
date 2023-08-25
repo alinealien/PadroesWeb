@@ -70,35 +70,66 @@ O W3C é um consórcio global que reúne equipe integral, afiliados e público p
 
 - #### Estrutura do HTML
 
-  HTML usa marcações ("<" e ">") para definir estrutura e formato. Tags como "<h1>" para títulos e "<p>" para parágrafos são exemplos. Editores modernos consideram tamanhos de tela e idiomas, adicionando tags meta.
+  HTML usa marcações ("<" e ">") para definir estrutura e formato. Tags como 
 
+  ```html
+  <h1>
+  ```
+
+  para títulos e 
+
+  ```html
+  <p>
+  ```
+
+  para parágrafos são exemplos. Editores modernos consideram tamanhos de tela e idiomas, adicionando tags meta.
 
 
 - #### Formatação de Texto
 
   O formato e destaque do texto em páginas web influenciam a experiência do usuário. A linguagem HTML oferece marcações para aplicar estilos, resultando em apresentação atraente e legível. O site w3schools.com é uma fonte útil para explorar formatação e marcação HTML, com uma biblioteca completa de tags e informações detalhadas. Isso permite aprender sobre novas tags, suas funções e como usá-las no código HTML.
 
-| Marcação                       | Função                                   |
-| ------------------------------ | ---------------------------------------- |
-| <b> ... </b>                   | Coloca o texto em negrito                |
-| <i> ... </i>                   | Coloca o texto em itálico                |
-| <em>                           | Nova recomendação, faz o mesmo que a tag <i> |
-| <strong>                       | Nova recomendação, faz o mesmo que a tag <b> |
-| <u> ... </u>                   | Sublinha o texto                         |
-| <sup> ... </sup>               | Eleva o texto (sobrescrito)              |
-| <sub> ... </sub>               | Baixa o texto (subscrito)                |
-| <del> ... </del>               | Exibe o texto como tachado (riscado)     |
-| <mark> ... </mark>             | Marca o texto com destaque               |
-| <blockquote> ... </blockquote> | Citação em bloco                         |
-| <ins>                          | Coloca um traço sob o texto para marcar que o referido trecho foi incluindo no texto original |
-| <code> ... </code>             | Formata o texto como código              |
-| <small>                        | Coloca o texto em destaque, diminuindo seu tamanho em relação ao tamanho padrão |
-| <pre> ... </pre>               | Preserva a formatação de texto (pré-formatado) |
-| <abbr> ... </abbr>             | Define uma abreviação                    |
+| Marcação     | Função                                   |
+| ------------ | ---------------------------------------- |
+| <b>          | Coloca o texto em negrito                |
+| <i>          | Coloca o texto em itálico                |
+| <em>         | Nova recomendação, faz o mesmo que a tag <i> |
+| <strong>     | Nova recomendação, faz o mesmo que a tag <b> |
+| <u>          | Sublinha o texto                         |
+| <sup>        | Eleva o texto (sobrescrito)              |
+| <sub>        | Baixa o texto (subscrito)                |
+| <del>        | Exibe o texto como tachado (riscado)     |
+| <mark>       | Marca o texto com destaque               |
+| <blockquote> | Citação em bloco                         |
+| <ins>        | Coloca um traço sob o texto para marcar que o referido trecho foi incluindo no texto original |
+| <code>       | Formata o texto como código              |
+| <small>      | Coloca o texto em destaque, diminuindo seu tamanho em relação ao tamanho padrão |
+| <pre>        | Preserva a formatação de texto (pré-formatado) |
+| <abbr>       | Define uma abreviação                    |
 
 - #### Hyperlinks em HTML
 
-  ​
+  Os hipertextos, também conhecidos como hyperlinks ou simplesmente links, são elementos 
+  essenciais no HTML para conectar e navegar entre diferentes páginas da web. Eles permitem que os usuários cliquem em um texto ou imagem e sejam direcionados para outra página, um local específico na mesma página ou até mesmo para um recurso externo. No HTML, os hipertextos são criados 
+  usando a tag 
+
+  ```
+  <a>
+  ```
+
+  Essa tag é acompanhada pelo atributo 
+
+  ```
+  href
+  ```
+
+  Que indica o destino do link, ou seja, a URL da página para a qual o usuário será redirecionado ao clicar no link. Por exemplo:
+
+  ```
+   <a href="<https://www.example.com> "> Clique aqui </a> criará um link com o texto "Clique aqui" 
+  ```
+
+  Levará o usuário para o endereço "<https://www.example.com>".
 
 
 - #### Imagens e Vídeos em HTML
