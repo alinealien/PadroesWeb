@@ -89,23 +89,38 @@ O W3C é um consórcio global que reúne equipe integral, afiliados e público p
 
   O formato e destaque do texto em páginas web influenciam a experiência do usuário. A linguagem HTML oferece marcações para aplicar estilos, resultando em apresentação atraente e legível. O site w3schools.com é uma fonte útil para explorar formatação e marcação HTML, com uma biblioteca completa de tags e informações detalhadas. Isso permite aprender sobre novas tags, suas funções e como usá-las no código HTML.
 
-| Marcação     | Função                                   |
-| ------------ | ---------------------------------------- |
-| <b>          | Coloca o texto em negrito                |
-| <i>          | Coloca o texto em itálico                |
-| <em>         | Nova recomendação, faz o mesmo que a tag <i> |
-| <strong>     | Nova recomendação, faz o mesmo que a tag <b> |
-| <u>          | Sublinha o texto                         |
-| <sup>        | Eleva o texto (sobrescrito)              |
-| <sub>        | Baixa o texto (subscrito)                |
-| <del>        | Exibe o texto como tachado (riscado)     |
-| <mark>       | Marca o texto com destaque               |
-| <blockquote> | Citação em bloco                         |
-| <ins>        | Coloca um traço sob o texto para marcar que o referido trecho foi incluindo no texto original |
-| <code>       | Formata o texto como código              |
-| <small>      | Coloca o texto em destaque, diminuindo seu tamanho em relação ao tamanho padrão |
-| <pre>        | Preserva a formatação de texto (pré-formatado) |
-| <abbr>       | Define uma abreviação                    |
+| Marcação   | Função                                   |
+| ---------- | ---------------------------------------- |
+| b          | Coloca o texto em negrito                |
+| i          | Coloca o texto em itálico                |
+| em         | Nova recomendação, faz o mesmo que a tag i |
+| strong     | Nova recomendação, faz o mesmo que a tag b |
+| u          | Sublinha o texto                         |
+| sup        | Eleva o texto (sobrescrito)              |
+| sub        | Baixa o texto (subscrito)                |
+| del        | Exibe o texto como tachado (riscado)     |
+| mark       | Marca o texto com destaque               |
+| blockquote | Citação em bloco                         |
+| ins        | Coloca um traço sob o texto para marcar que o referido trecho foi incluindo no texto original |
+| code       | Formata o texto como código              |
+| small      | Coloca o texto em destaque, diminuindo seu tamanho em relação ao tamanho padrão |
+| pre        | Preserva a formatação de texto (pré-formatado) |
+| abbr       | Define uma abreviação                    |
+
+##### Atenção:
+
+Devido a uma limitação em meu editor, por enquanto, retirei os símbolos de das tags <> e seu fechamento </>. Lembre-se sempre, as tags, por padrão seguem o modelo:
+
+```html
+<div>text</div>
+
+<!--Abriu-->
+<div> text 
+<!--Fechou-->
+</div>
+```
+
+
 
 - #### Hyperlinks em HTML
 
