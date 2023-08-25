@@ -12,7 +12,7 @@ O engenheiro Robert Metcalfe da Xerox foi fundamental ao inventar a Ethernet em 
 
 A adoção generalizada da Ethernet nas décadas seguintes impulsionou o crescimento das redes, culminando em seu papel central na comunicação online. Hoje, a Ethernet é a base das redes locais e uma tecnologia essencial para a internet.
 
-#### 
+
 
 ### ArpaNET e a crise dos mísseis
 
@@ -68,26 +68,25 @@ HTML (HyperText Markup Language) é uma linguagem de marcação para criar pági
 
 O W3C é um consórcio global que reúne equipe integral, afiliados e público para criar padrões web. Liderado por Tim Berners-Lee e CEO Jeffrey Jaffe, visa desenvolver protocolos e diretrizes para impulsionar o potencial da web.
 
-- #### Estrutura do HTML
+#### Estrutura do HTML
 
-  HTML usa marcações ("<" e ">") para definir estrutura e formato. Tags como 
+HTML usa marcações ("<" e ">") para definir estrutura e formato. Tags como 
 
-  ```html
-  <h1>
-  ```
+```html
+<h1>
+```
 
-  para títulos e 
+para títulos e 
 
-  ```html
-  <p>
-  ```
+```html
+<p>
+```
 
-  para parágrafos são exemplos. Editores modernos consideram tamanhos de tela e idiomas, adicionando tags meta.
+para parágrafos são exemplos. Editores modernos consideram tamanhos de tela e idiomas, adicionando tags meta.
 
+#### Formatação de Texto
 
-- #### Formatação de Texto
-
-  O formato e destaque do texto em páginas web influenciam a experiência do usuário. A linguagem HTML oferece marcações para aplicar estilos, resultando em apresentação atraente e legível. O site w3schools.com é uma fonte útil para explorar formatação e marcação HTML, com uma biblioteca completa de tags e informações detalhadas. Isso permite aprender sobre novas tags, suas funções e como usá-las no código HTML.
+O formato e destaque do texto em páginas web influenciam a experiência do usuário. A linguagem HTML oferece marcações para aplicar estilos, resultando em apresentação atraente e legível. O site w3schools.com é uma fonte útil para explorar formatação e marcação HTML, com uma biblioteca completa de tags e informações detalhadas. Isso permite aprender sobre novas tags, suas funções e como usá-las no código HTML.
 
 | Marcação   | Função                                   |
 | ---------- | ---------------------------------------- |
@@ -122,29 +121,29 @@ Devido a uma limitação em meu editor, por enquanto, retirei os símbolos de da
 
 
 
-- #### Hyperlinks em HTML
+#### Hyperlinks em HTML
 
-  Os hipertextos, também conhecidos como hyperlinks ou simplesmente links, são elementos 
-  essenciais no HTML para conectar e navegar entre diferentes páginas da web. Eles permitem que os usuários cliquem em um texto ou imagem e sejam direcionados para outra página, um local específico na mesma página ou até mesmo para um recurso externo. No HTML, os hipertextos são criados 
-  usando a tag 
+Os hipertextos, também conhecidos como hyperlinks ou simplesmente links, são elementos 
+essenciais no HTML para conectar e navegar entre diferentes páginas da web. Eles permitem que os usuários cliquem em um texto ou imagem e sejam direcionados para outra página, um local específico na mesma página ou até mesmo para um recurso externo. No HTML, os hipertextos são criados 
+usando a tag 
 
-  ```html
-  <a>
-  ```
+```html
+<a>
+```
 
-  Essa tag é acompanhada pelo atributo 
+Essa tag é acompanhada pelo atributo 
 
-  ```html
-  href
-  ```
+```html
+href
+```
 
-  Que indica o destino do link, ou seja, a URL da página para a qual o usuário será redirecionado ao clicar no link. Por exemplo:
+Que indica o destino do link, ou seja, a URL da página para a qual o usuário será redirecionado ao clicar no link. Por exemplo:
 
-  ```html
-   <a href="<https://www.example.com> "> Clique aqui </a> criará um link com o texto "Clique aqui" 
-  ```
+```html
+ <a href="<https://www.example.com> "> Clique aqui </a> criará um link com o texto "Clique aqui" 
+```
 
-  Levará o usuário para o endereço "<https://www.example.com>".
+Levará o usuário para o endereço "<https://www.example.com>".
 
 Os hipertextos podem ter atributos adicionais, como "target", que determina onde o conteúdo será aberto (na mesma janela, em uma nova aba ou em um frame) e "title", que fornece uma descrição ou dica quando o usuário passa o mouse sobre o link. Os hipertextos podem ser aplicados a qualquer elemento de texto ou imagem em uma página web, permitindo que os usuários naveguem facilmente entre diferentes seções do site ou acessem recursos externos relevantes. 
 
@@ -176,7 +175,7 @@ Ao clicar no link de âncora, o navegador irá rolar automaticamente para a seç
 Os links de âncora são particularmente úteis em páginas longas, como tutoriais, documentos extensos ou páginas de perguntas frequentes, onde os usuários podem desejar pular diretamente para uma seção específica. Eles melhoram a usabilidade, facilitando a navegação interna e tornando mais fácil para os usuários encontrarem as informações desejadas em uma página extensa.
 ​            
 
-- #### Imagens e Vídeos em HTML
+#### Imagens e Vídeos em HTML
 
 A inserção de imagens e vídeos no HTML é uma forma essencial de enriquecer e visualmente atrair as páginas da web. Para inserir uma imagem, você pode usar a tag <img>. Essa tag requer o atributo obrigatório "src", que especifica o caminho ou URL da imagem. Por exemplo: 
 
@@ -200,7 +199,9 @@ O atributo "controls" mostra os controles de reprodução do vídeo. Vídeos de 
 
 **Lembre-se:** de otimizar imagens e vídeos para a web, ajustando o tamanho do arquivo e a compatibilidade com navegadores. Adicionalmente, forneça descrições alternativas (atributo "alt") para imagens, melhorando acessibilidade e indexação em mecanismos de busca.
 
-- #### Listas em HTML
+
+
+#### Listas em HTML
 
 No HTML, é possível criar listas ordenadas e não ordenadas para estruturar informações de maneira organizada. As listas aprimoram a compreensão e legibilidade do conteúdo.
 
@@ -260,7 +261,7 @@ Aqui, temos uma lista não ordenada com três itens. O segundo item contém uma 
 
 ### CSS: Cascading Style Sheets
 
-- #### ID e Classes em CSS
+#### ID e Classes em CSS
 
 CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada em conjunto com o HTML para definir a aparência e o design de páginas web. Com o CSS, você pode controlar o layout, as cores, as fontes, as animações e outros aspectos visuais de um documento HTML, permitindo uma personalização completa da aparência do conteúdo.
 
@@ -314,7 +315,7 @@ A cor será azul, pois a regra do atributo "style" tem maior prioridade. Quanto 
 
 ​                
 
-- #### Príncipais Regras CSS
+#### Príncipais Regras CSS
 
 Com o CSS, é possível aplicar diversos estilos a textos, fontes, cores e fundos em páginas web. Para estilizar textos, você pode usar propriedades como "font-family" para definir a fonte utilizada, "font-size" para o tamanho do texto e "font-weight" para controlar a espessura da fonte:
 
