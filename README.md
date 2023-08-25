@@ -128,31 +128,77 @@ Devido a uma limitação em meu editor, por enquanto, retirei os símbolos de da
   essenciais no HTML para conectar e navegar entre diferentes páginas da web. Eles permitem que os usuários cliquem em um texto ou imagem e sejam direcionados para outra página, um local específico na mesma página ou até mesmo para um recurso externo. No HTML, os hipertextos são criados 
   usando a tag 
 
-  ```
+  ```html
   <a>
   ```
 
   Essa tag é acompanhada pelo atributo 
 
-  ```
+  ```html
   href
   ```
 
   Que indica o destino do link, ou seja, a URL da página para a qual o usuário será redirecionado ao clicar no link. Por exemplo:
 
-  ```
+  ```html
    <a href="<https://www.example.com> "> Clique aqui </a> criará um link com o texto "Clique aqui" 
   ```
 
   Levará o usuário para o endereço "<https://www.example.com>".
 
+Os hipertextos podem ter atributos adicionais, como "target", que determina onde o conteúdo será aberto (na mesma janela, em uma nova aba ou em um frame) e "title", que fornece uma descrição ou dica quando o usuário passa o mouse sobre o link. Os hipertextos podem ser aplicados a qualquer elemento de texto ou imagem em uma página web, permitindo que os usuários naveguem facilmente entre diferentes seções do site ou acessem recursos externos relevantes. 
+
+É importante usar links de forma clara e significativa para fornecer uma experiência de navegação 
+intuitiva e facilitar a descoberta de conteúdo relevante. Além dos Hyperlinks, existem os Links de âncora (*Anchor Links*), também conhecidos como "links internos" ou "links de navegação interna". Eles são elementos em HTML que permitem aos usuários acessarem seções específicas de uma mesma página. Eles são úteis quando se tem um conteúdo longo, como uma página com vários tópicos ou um artigo 
+extenso, e deseja-se permitir que os usuários naveguem diretamente para uma seção específica, sem precisar rolar toda a página.
+
+Para criar um link de âncora, você precisa adicionar uma tag de âncora à seção de destino e referenciá-la no link. Primeiro, coloque uma tag  
+
+```html
+<a>
+```
+
+com um atributo "name" ou "id" na seção para a qual deseja criar o link de âncora. Por exemplo: 
+
+```html
+<h2 id="secao1">Seção 1</h2> ou <div id="secao2">Conteúdo da Seção 2</div>
+```
 
 
+Em seguida, você pode criar um link que referencia essa âncora usando o atributo "href" com o valor "#" seguido pelo nome ou ID da âncora. Por exemplo:
 
+```html
+<a href="#secao1">Ir para a Seção 1</a>
+```
+
+
+Ao clicar no link de âncora, o navegador irá rolar automaticamente para a seção específica da página identificada pelo nome ou ID da âncora. Isso proporciona aos usuários uma maneira conveniente de navegar rapidamente para seções de interesse em páginas com muito conteúdo vertical. 
+Os links de âncora são particularmente úteis em páginas longas, como tutoriais, documentos extensos ou páginas de perguntas frequentes, onde os usuários podem desejar pular diretamente para uma seção específica. Eles melhoram a usabilidade, facilitando a navegação interna e tornando mais fácil para os usuários encontrarem as informações desejadas em uma página extensa.
+​            
 
 - #### Imagens e Vídeos em HTML
 
+A inserção de imagens e vídeos no HTML é uma forma essencial de enriquecer e visualmente atrair as páginas da web. Para inserir uma imagem, você pode usar a tag <img>. Essa tag requer o atributo obrigatório "src", que especifica o caminho ou URL da imagem. Por exemplo: 
 
+```html
+<img src="caminho/para/imagem.jpg" alt="Descrição da imagem">
+```
+
+O atributo "alt" fornece uma descrição alternativa para a imagem, que é exibida caso a imagem não 
+possa ser carregada ou para fins de acessibilidade.
+
+Para inserir vídeos, você pode usar a tag <video>. Essa tag permite a reprodução de vídeos diretamente na página. Você precisa definir o atributo "src" com o caminho ou URL do vídeo e pode especificar outros 
+atributos, como "width" e "height", para definir as dimensões do vídeo 
+na página. Por exemplo: 
+ 
+
+```
+   <video src="caminho/para/video.mp4" width="500" height="300" controls></video>
+```
+
+O atributo "controls" mostra os controles de reprodução do vídeo. Vídeos de plataformas como YouTube podem ser incorporados usando código fornecido, geralmente um iframe. Adicionar imagens e vídeos no HTML é eficaz para transmitir informações visualmente, tornando as páginas web mais atrativas e interativas.
+
+**Lembre-se** de otimizar imagens e vídeos para a web, ajustando o tamanho do arquivo e a compatibilidade com navegadores. Adicionalmente, forneça descrições alternativas (atributo "alt") para imagens, melhorando acessibilidade e indexação em mecanismos de busca.
 
 - #### Listas em HTML
 
