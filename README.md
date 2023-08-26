@@ -568,7 +568,8 @@ A seleção correta entre essas categorias garante a hierarquia visual e o layou
 
 #### Content, Padding, Border e Margin
 
-A estrutura espacial na página **HTML **de uma *tag *de bloco é composta por quatro principais áreas:
+A estrutura espacial na página **HTML **de uma `tag` de bloco é composta por quatro principais áreas:
+
 
 ![Exmp Pagina](https://raw.githubusercontent.com/alinealien/PadroesWeb/main/paginahtml_margins.png)
 
