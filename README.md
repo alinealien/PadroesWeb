@@ -663,6 +663,30 @@ _________________
 
 
 
+#### Organizando o Layout de um site
+
+Desenvolver um website visualmente coeso e atraente demanda cuidados com o layout. No contexto da criação de páginas web, o layout refere-se à organização visual dos elementos no site. Isso inclui a disposição harmoniosa de itens como texto, imagens, gráficos, botões e outros componentes, resultando em uma composição esteticamente agradável e funcional. O layout é a fase primordial do processo de criação, na qual o designer define a distribuição dos elementos visuais na página. Essa etapa engloba escolhas como tamanho, posicionamento, hierarquia visual, espaçamento, cores e tipografia, bem como a estrutura global da composição. Em resumo, o layout molda a organização visual da página.
+
+Nos websites, o layout desempenha um papel crucial ao apresentar o conteúdo de maneira clara e organizada, proporcionando uma experiência amigável e intuitiva aos usuários. Além disso, o layout web deve ser responsivo, ou seja, adaptar-se a diferentes tamanhos de tela para garantir a visualização adequada tanto em dispositivos móveis quanto em desktops. Para implementar um layout eficiente, é recomendável utilizar sistemas de layout como CSS Flexbox ou Grid. Essas abordagens contribuem para a consistência e alinhamento dos elementos em todas as páginas do site.
+
+
+
+
+
+#### Flexbox
+
+
+
+
+
+#### Design Responsivo
+
+
+
+
+
+#### Media Queries
+
 
 
 
