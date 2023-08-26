@@ -680,19 +680,65 @@ Flexbox é apropriado para layouts unidimensionais, como barras de navegação o
 
 ### Flexbox
 
+O Flexbox, também chamado de Flexbox Layout ou Flexible Box, é uma ferramenta CSS introduzida no CSS3. Sua função é simplificar layouts responsivos e flexíveis em páginas web. Com ele, elementos dentro de um contêiner ajustam-se automaticamente ao espaço disponível, proporcionando posicionamento controlado e intuitivo. A ideia central do Flexbox é organizar elementos em um único eixo ou em ambos (horizontal e vertical), facilitando centralização, alinhamento e ajuste automático para encaixar no espaço.
 
+O Flexbox opera em um modelo de contêiner e itens. O contêiner (elemento pai) usa `display: flex`, tornando os itens internos (elementos filhos) flexíveis. Alinhamento horizontal é controlado por `justify-content`, vertical por `align-items`. Para ativá-lo, usamos `display: flex` no elemento pai, organizando os elementos de maneira flexível. Regras-chave incluem:
+
+- `flex-direction`: Define direção dos itens (row, row-reverse, column, column-reverse).
+
+<img src="https://raw.githubusercontent.com/alinealien/PadroesWeb/main/flexbox.png">
+
+- `justify-content`: Alinha itens horizontalmente (flex-start, flex-end, center, space-between, space-around).
+- `align-items`: Alinha itens verticalmente (flex-start, flex-end, center, baseline, stretch).
+- `flex-wrap`: Controla disposição em uma ou várias linhas (nowrap, wrap, wrap-reverse).
+- `flex`: Define crescimento, encolhimento e tamanho inicial do item flexível.
+- `align-self`: Controla alinhamento vertical de um item individual.
+
+Embora ideal para um eixo, pode ser combinado com técnicas como Grid para designs complexos. Compatível com navegadores modernos, o Flexbox é usado amplamente na criação de interfaces responsivas e adaptáveis.
 
 
 
 ### Design Responsivo
 
+Antigamente, os sites tinham layouts fixos para telas de desktop, causando problemas em dispositivos menores, como smartphones, com elementos desalinhados e fontes pequenas. Com o surgimento de dispositivos variados, o design responsivo se tornou crucial.
 
+O Design Responsivo adapta automaticamente sites a diferentes telas e dispositivos usando CSS e HTML. Media queries aplicam regras CSS com base no dispositivo, permitindo layouts flexíveis. Isso cria uma experiência fluída, redimensionando elementos e ajustando imagens para dispositivos móveis.
+
+Para criar sites responsivos, usamos abordagens como flexbox, CSS grid e unidades relativas (% e em em vez de pixels). Media Queries (@media()) escalonam e ajustam elementos proporcionalmente ao tamanho da tela.
 
 
 
 ### Media Queries
 
+As media queries são essenciais no CSS para o Design Responsivo. Elas aplicam estilos com base em características do dispositivo, como largura, altura e resolução. Por exemplo, podemos ajustar fontes ou disposição quando a tela é pequena, otimizando para dispositivos móveis.
 
+A regra @media() no CSS é crucial para layouts responsivos, adaptando-se a telas diferentes. A estrutura básica é:
+
+```css
+@media (condição) {
+  /* Estilos para a condição */
+}
+
+```
+
+A condição avalia características do dispositivo, como largura, orientação, densidade de pixels. Exemplo:
+
+```css
+.principal {
+  width: 1200px;
+}
+
+@media (max-width: 768px) {
+  .principal {
+    width: 740px;
+  }
+}
+
+```
+
+Nesse exemplo, a div com classe "principal" tem largura de 1200px, mas abaixo de 768px de largura de tela, a largura é ajustada para 740px. Operadores lógicos (and, or, not) podem criar condições complexas.
+
+Para orientação do dispositivo, use `@media (orientation: valor) {...}`. "valor" pode ser portrait (retrato) ou landscape (paisagem), dependendo da orientação. Para densidade de pixels, `@media (min-resolution: 192dpi) {...}` ajusta estilos pela densidade (DPI) do dispositivo.
 
 
 
@@ -703,3 +749,7 @@ Flexbox é apropriado para layouts unidimensionais, como barras de navegação o
 - Design Responsivo
 - Media Queries
 
+
+____________________
+
+**Referências:**
