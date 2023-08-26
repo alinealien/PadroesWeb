@@ -669,7 +669,13 @@ Desenvolver um website visualmente coeso e atraente demanda cuidados com o layou
 
 Nos websites, o layout desempenha um papel crucial ao apresentar o conteúdo de maneira clara e organizada, proporcionando uma experiência amigável e intuitiva aos usuários. Além disso, o layout web deve ser responsivo, ou seja, adaptar-se a diferentes tamanhos de tela para garantir a visualização adequada tanto em dispositivos móveis quanto em desktops. Para implementar um layout eficiente, é recomendável utilizar sistemas de layout como CSS Flexbox ou Grid. Essas abordagens contribuem para a consistência e alinhamento dos elementos em todas as páginas do site.
 
+<img src="https://raw.githubusercontent.com/alinealien/PadroesWeb/main/flexboxCssgrids.png">
 
+
+
+Flexbox e CSS Grid diferem principalmente em sua dimensionalidade e controle de posicionamento. O **Flexbox é unidimensional, organizando elementos em uma única direção (horizontal ou vertical)**, enquanto **o CSS Grid é bidimensional, criando layouts com linhas e colunas**. No Flexbox, itens são alinhados em um eixo único, sem controle explícito sobre outras direções. Em contraste, o CSS Grid permite posicionar itens em linhas e colunas específicas, garantindo controle preciso sobre o layout.
+
+Flexbox é apropriado para layouts unidimensionais, como barras de navegação ou listas de itens, enquanto o CSS Grid é mais poderoso para layouts complexos com áreas definidas explicitamente. Combinar essas técnicas pode criar layouts flexíveis e abrangentes. A escolha entre Flexbox e CSS Grid depende das necessidades específicas de seu projeto de design web.
 
 
 
