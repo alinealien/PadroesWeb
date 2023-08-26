@@ -541,6 +541,65 @@ Essas tags, combinadas com CSS e JavaScript, oferecem interatividade e personali
 
 #### Tags de Bloco e CSS
 
+As tags HTML desempenham um papel central na construção de páginas web, permitindo criar elementos e formatar conteúdo. Elas se dividem em duas categorias: tags de linha e tags de bloco, cada uma com usos específicos.
+
+As tags de linha ocupam apenas o espaço necessário para o conteúdo, mantendo-se na mesma linha. Exemplos são `<span>`, `<a>`, `<img>` e `<input>`. São úteis para elementos pequenos, interativos ou estilísticos.
+
+As tags de bloco ocupam todo espaço horizontal, começando em nova linha. São adequadas para elementos maiores como parágrafos, títulos, listas e divisões de seções. Escolher a tag certa é crucial para o layout e semântica corretos.
+
+Exemplo de tags de bloco em HTML:
+
+```html
+<p>Parágrafo de exemplo.</p>
+<h1>Título de Exemplo</h1>
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+<div>
+  <p>Conteúdo em uma divisão.</p>
+</div>
+
+```
+
+A seleção correta entre essas categorias garante a hierarquia visual e o layout desejados na página.
+
+
+
+#### Content, Padding, Border e Margin
+
+A estrutura espacial na página **HTML **de uma *tag *de bloco é composta por quatro principais áreas:
+
+![Exmp Pagina](https://raw.githubusercontent.com/alinealien/PadroesWeb/main/paginahtml_margins.png)
+
+m uma tag de bloco, temos três elementos essenciais:
+
+1. **Conteúdo**: O núcleo da tag, exibindo texto, imagens ou outros elementos. É a parte visível do elemento na página.
+2. **Preenchimento**: Espaço entre o conteúdo e a borda. Acrescenta espaço interno e destaque ao conteúdo.
+3. **Borda**: Uma linha contornando o bloco, visualmente demarcando seu espaço. Pode ser personalizada com estilo, espessura e cor.
+
+Além disso, temos a **margem**, que é o espaço entre o bloco e outros elementos adjacentes ou blocos na página. Cria separação visual entre elementos.
+
+O CSS permite controlar esses aspectos, possibilitando ajustes no layout e na aparência dos blocos. Personalizar preenchimento, borda e margem oferece a designers a oportunidade de criar designs atraentes, alinhados com a identidade visual do site e proporcionando experiência agradável aos usuários.
+
+
+
+#### Regras de Estado em CSS
+
+
+
+
+
+
+
+
+
+#### Rich Media: Áudio e Vídeo
+
+
+
+
+
 
 
 
