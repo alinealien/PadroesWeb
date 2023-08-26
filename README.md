@@ -68,11 +68,11 @@ HTML (HyperText Markup Language) é uma linguagem de marcação para criar pági
 
 O W3C é um consórcio global que reúne equipe integral, afiliados e público para criar padrões web. Liderado por Tim Berners-Lee e CEO Jeffrey Jaffe, visa desenvolver protocolos e diretrizes para impulsionar o potencial da web.
 
-#### Estrutura do HTML
+### Estrutura do HTML
 
 HTML usa marcações ("<" e ">") para definir estrutura e formato. Tags como  `<h1>`para títulos e  x `<p>` para parágrafos são exemplos. Editores modernos consideram tamanhos de tela e idiomas, adicionando tags meta.
 
-#### Formatação de Texto
+### Formatação de Texto
 
 O formato e destaque do texto em páginas web influenciam a experiência do usuário. A linguagem HTML oferece marcações para aplicar estilos, resultando em apresentação atraente e legível. 
 
@@ -111,7 +111,7 @@ Devido a uma limitação em meu editor, por enquanto, retirei os símbolos de da
 
 
 
-#### Hyperlinks em HTML
+### Hyperlinks em HTML
 
 Os hipertextos, também conhecidos como hyperlinks ou simplesmente links, são elementos 
 essenciais no HTML para conectar e navegar entre diferentes páginas da web. Eles permitem que os usuários cliquem em um texto ou imagem e sejam direcionados para outra página, um local específico na mesma página ou até mesmo para um recurso externo. No HTML, os hipertextos são criados 
@@ -147,7 +147,7 @@ Ao clicar no link de âncora, o navegador irá rolar automaticamente para a seç
 Os links de âncora são particularmente úteis em páginas longas, como tutoriais, documentos extensos ou páginas de perguntas frequentes, onde os usuários podem desejar pular diretamente para uma seção específica. Eles melhoram a usabilidade, facilitando a navegação interna e tornando mais fácil para os usuários encontrarem as informações desejadas em uma página extensa.
 ​            
 
-#### Imagens e Vídeos em HTML
+### Imagens e Vídeos em HTML
 
 A inserção de imagens e vídeos no HTML é uma forma essencial de enriquecer e visualmente atrair as páginas da web. Para inserir uma imagem, você pode usar a tag `<img>`. Essa tag requer o atributo obrigatório "src", que especifica o caminho ou URL da imagem. Por exemplo: 
 
@@ -170,7 +170,7 @@ O atributo "controls" mostra os controles de reprodução do vídeo. Vídeos de 
 
 
 
-#### Listas em HTML
+### Listas em HTML
 
 No HTML, é possível criar listas ordenadas e não ordenadas para estruturar informações de maneira organizada. As listas aprimoram a compreensão e legibilidade do conteúdo.
 
@@ -232,7 +232,7 @@ Aqui, temos uma lista não ordenada com três itens. O segundo item contém uma 
 
 ### CSS: Cascading Style Sheets
 
-#### ID e Classes em CSS
+### ID e Classes em CSS
 
 CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada em conjunto com o HTML para definir a aparência e o design de páginas web. Com o CSS, você pode controlar o layout, as cores, as fontes, as animações e outros aspectos visuais de um documento HTML, permitindo uma personalização completa da aparência do conteúdo.
 
@@ -287,7 +287,7 @@ A cor será azul, pois a regra do atributo "style" tem maior prioridade. Quanto 
 
 ​                
 
-#### Príncipais Regras CSS
+### Príncipais Regras CSS
 
 Com o CSS, é possível aplicar diversos estilos a textos, fontes, cores e fundos em páginas web. Para estilizar textos, você pode usar propriedades como "font-family" para definir a fonte utilizada, "font-size" para o tamanho do texto e "font-weight" para controlar a espessura da fonte:
 
@@ -344,7 +344,7 @@ _______________
 
 
 
-#### Tabelas em HTML
+### Tabelas em HTML
 
 As tabelas são elementos estruturais essenciais no **HTML**, permitindo a organização e exibição de dados em linhas e colunas de forma clara e sistemática. Uma das principais vantagens das tabelas é a capacidade de visualizar dados comparativos. Ao dispor informações lado a lado, torna-se mais fácil analisar e entender padrões, diferenças e tendências entre os dados apresentados.
 
@@ -353,7 +353,7 @@ Outra aplicação prática das tabelas é a exibição de listas de informaçõe
 Além disso, as tabelas são ideais para criar calendários. Ao organizar datas em colunas e dias da semana em linhas, os calendários se tornam mais legíveis e facilitam o planejamento e acompanhamento de 
 eventos, prazos e compromissos. Entretanto, é importante evitar o uso excessivo de tabelas para fins de layout. 
 
-#### Estrutura da tabela em HTML
+### Estrutura da tabela em HTML
 
 A estrutura de uma tabela em HTML é fundamental para organizar e apresentar informações de maneira clara e acessível. A tabela é delimitada pela tag `<table>`, a qual marca o início do elemento tabular. O conteúdo contido dentro desta tag é estruturado em três seções principais: o cabeçalho `(<thead>)`, o corpo `(<tbody>)` e o rodapé `(<tfoot>)`. A adoção dessa divisão, embora opcional, é altamente recomendada, uma vez que confere à tabela maior semântica, facilitando a compreensão por leitores de tela e a indexação por mecanismos de busca.
 
@@ -393,7 +393,7 @@ Uma característica importante das tabelas é a possibilidade de mesclar célula
 
 
 
-#### Tabelas e CSS
+### Tabelas e CSS
 
 As tabelas HTML, quando combinadas com CSS, oferecem um potencial ampliado de personalização e melhoria de layout. O CSS permite definir cores de fundo, espaçamento e bordas, contribuindo para uma apresentação atraente e legível das tabelas. Além disso, é possível aplicar estilos específicos a cabeçalhos e rodapés, realçando essas seções com cores distintas e fontes diferenciadas. Destacar células com estilos personalizados é outra vantagem, permitindo a aplicação de cores específicas a valores relevantes ou acima de um limiar, direcionando o foco para informações cruciais. Além disso, o CSS facilita a gestão de conteúdo com rolagem horizontal, útil quando a tabela possui muitas colunas, evitando distorções no layout ao adicionar uma barra de rolagem horizontal.
 
@@ -429,7 +429,7 @@ th, td {
 Neste exemplo, a classe `scrollable-table` é usada para criaruma tabela com rolagem horizontal quando o conteúdo excede a largura da tela. Isso mantém o layout da tabela intacto e permite que os usuários visualizem todas as informações com facilidade.
 
 
-#### Formulários em HTML
+### Formulários em HTML
 
 Os formulários em **HTML **são elementos essenciais nas páginas da web, pois desempenham um papel fundamental na coleta de informações dos usuários. Eles possibilitam a criação de campos de entrada, botões de envio e outros elementos interativos que tornam a experiência do usuário mais dinâmica e participativa. Os formulários também podem conter opções de escolha, como botões de rádio e caixas de seleção, que permitem aos usuários fazerem escolhas entre diversas opções pré-definidas. 
 
@@ -503,8 +503,7 @@ Os formulários em **HTML **são elementos essenciais nas páginas da web, pois 
 Os botões de envio são essenciais para submeter dados de formulários. Eles são fundamentais em sistemas de login, envio de mensagens e interações importantes. Formulários podem ter elementos interativos, como campos de data e seletores de arquivos, melhorando a interação. A segurança e a conformidade com políticas de privacidade são cruciais ao lidar com dados coletados por formulários.
 
 
-
-#### Tags de Formulários
+### Tags de Formulários
 
 Os formulários HTML são essenciais para interação e coleta de informações. Eles usam tags para criar campos, botões e elementos interativos, aprimorando a experiência do usuário.
 
@@ -539,7 +538,7 @@ Tags dentro de `<form>`:
 Essas tags, combinadas com CSS e JavaScript, oferecem interatividade e personalização. Utilizá-las adequadamente garante formulários funcionais e seguros para coletar dados essenciais.
 
 
-#### Tags de Bloco e CSS
+### Tags de Bloco e CSS
 
 As tags HTML desempenham um papel central na construção de páginas web, permitindo criar elementos e formatar conteúdo. Elas se dividem em duas categorias: tags de linha e tags de bloco, cada uma com usos específicos.
 
@@ -566,7 +565,7 @@ A seleção correta entre essas categorias garante a hierarquia visual e o layou
 
 
 
-#### Content, Padding, Border e Margin
+### Content, Padding, Border e Margin
 
 A estrutura espacial na página HTML de uma `tag` de bloco é composta por quatro principais áreas:
 
@@ -587,7 +586,7 @@ Além disso, temos a **margem**, que é o espaço entre o bloco e outros element
 O CSS permite controlar esses aspectos, possibilitando ajustes no layout e na aparência dos blocos. Personalizar preenchimento, borda e margem oferece a designers a oportunidade de criar designs atraentes, alinhados com a identidade visual do site e proporcionando experiência agradável aos usuários.
 
 
-#### Regras de Estado em CSS
+### Regras de Estado em CSS
 
 As regras de estado em CSS desempenham um papel fundamental na criação de interações visuais nas páginas da web. Com base no estado atual de um elemento, é possível aplicar estilos diferentes, permitindo que os desenvolvedores personalizem a aparência dos elementos conforme as ações do usuário.
 
@@ -603,7 +602,7 @@ Esses seletores de estado em CSS melhoram o design e interatividade das páginas
 
 
 
-#### Rich Media: Áudio e Vídeo
+### Rich Media: Áudio e Vídeo
 
 Rich Media, um termo sugestivo, envolve a inserção de conteúdo multimídia em páginas da web. Por meio de várias tecnologias e elementos HTML, vídeos, áudios, animações e gráficos podem ser incorporados, aprimorando o conteúdo e atraindo a atenção.
 
@@ -663,7 +662,7 @@ _________________
 
 
 
-#### Organizando o Layout de um site
+### Organizando o Layout de um site
 
 Desenvolver um website visualmente coeso e atraente demanda cuidados com o layout. No contexto da criação de páginas web, o layout refere-se à organização visual dos elementos no site. Isso inclui a disposição harmoniosa de itens como texto, imagens, gráficos, botões e outros componentes, resultando em uma composição esteticamente agradável e funcional. O layout é a fase primordial do processo de criação, na qual o designer define a distribuição dos elementos visuais na página. Essa etapa engloba escolhas como tamanho, posicionamento, hierarquia visual, espaçamento, cores e tipografia, bem como a estrutura global da composição. Em resumo, o layout molda a organização visual da página.
 
@@ -679,19 +678,19 @@ Flexbox é apropriado para layouts unidimensionais, como barras de navegação o
 
 
 
-#### Flexbox
+### Flexbox
 
 
 
 
 
-#### Design Responsivo
+### Design Responsivo
 
 
 
 
 
-#### Media Queries
+### Media Queries
 
 
 
