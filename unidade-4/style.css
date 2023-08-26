@@ -106,4 +106,17 @@ padding: 20px;
 
 .coluna{
 flex: 1;
+padding: 20px;
+text-align: justify;
+}
+
+.coluna h2{
+    margin: 20px 0;
+}
+
+footer{
+    background-color: var(--cor-4);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
