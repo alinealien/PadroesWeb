@@ -587,25 +587,59 @@ Além disso, temos a **margem**, que é o espaço entre o bloco e outros element
 O CSS permite controlar esses aspectos, possibilitando ajustes no layout e na aparência dos blocos. Personalizar preenchimento, borda e margem oferece a designers a oportunidade de criar designs atraentes, alinhados com a identidade visual do site e proporcionando experiência agradável aos usuários.
 
 
-
 #### Regras de Estado em CSS
 
+As regras de estado em CSS desempenham um papel fundamental na criação de interações visuais nas páginas da web. Com base no estado atual de um elemento, é possível aplicar estilos diferentes, permitindo que os desenvolvedores personalizem a aparência dos elementos conforme as ações do usuário.
 
+Alguns dos seletores de estado em CSS são:
 
+- **:hover:** Aplica estilos quando o cursor do mouse está sobre o elemento. Ideal para efeitos de destaque em botões, links e imagens.
+- **:active:** Aplica-se quando o usuário pressiona o botão do mouse sobre o elemento. É usado para simular uma resposta tátil.
+- **:focus:** Aplicado quando o elemento está em foco após interação do usuário. Destaca campos de formulário.
+- **:visited:** Permite estilizar links já visitados, diferenciando-os para uma navegação eficiente.
+- **:first-child** e **:last-child:** Estiliza o primeiro e último filho de um elemento pai, sem a necessidade de classes ou identificadores.
 
-
-
+Esses seletores de estado em CSS melhoram o design e interatividade das páginas. Proporcionam feedback imediato, enriquecendo a experiência do usuário e adicionando personalidade e dinamismo ao design do site.
 
 
 
 #### Rich Media: Áudio e Vídeo
 
+Rich Media, um termo sugestivo, envolve a inserção de conteúdo multimídia em páginas da web. Por meio de várias tecnologias e elementos HTML, vídeos, áudios, animações e gráficos podem ser incorporados, aprimorando o conteúdo e atraindo a atenção.
 
+Vídeos são uma forma comum de utilizar Rich Media. Através das tags HTML `<video>` e `<source>`, desenvolvedores podem integrar vídeos em páginas web. Isso permite a reprodução de conteúdo audiovisual diretamente no navegador, proporcionando uma experiência visual envolvente.
 
+Áudio também é facilmente adicionado usando as tags `<audio>` e `<source>`. Isso viabiliza a incorporação de arquivos de áudio, como músicas e podcasts, em sites que desejam oferecer tal conteúdo.
 
+A tag `<canvas>` é outra ferramenta do Rich Media. Ela permite a criação de animações, gráficos e até jogos na página, com controle por JavaScript. Para conteúdo externo, as `<iframes>` entram em cena. Através delas, conteúdo de fontes externas, como mapas interativos e vídeos, pode ser integrado à página.
 
+O Rich Media amplia a interatividade e atratividade das páginas web, contudo, equilíbrio é fundamental. A acessibilidade e a velocidade de carregamento devem ser ponderadas. Músicas e vídeos ao abrir uma página sem propósito podem prejudicar a experiência. Garantir compatibilidade com diferentes navegadores e dispositivos é essencial para oferecer a todos uma experiência agradável.
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Rich Media</title>
+</head>
+<body>
+    <h1>Vídeo Incorporado</h1>
+    
+    <video width="640" height="360" controls>
+        <source src="exemplo-video.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+    
+    <p>Este é um exemplo de incorporação de vídeo usando a tag &lt;video&gt;.</p>
+</body>
+</html>
 
+```
+
+Neste exemplo, estamos utilizando a tag `<video>` para incorporar um vídeo na página. O atributo `controls` adiciona controles de reprodução padrão, como play, pause e barra de progresso. A tag `<source>` é usada para fornecer os diferentes formatos do vídeo para suportar navegadores diferentes. O texto "Seu navegador não suporta o elemento de vídeo." é exibido caso o navegador não seja capaz de reproduzir o vídeo.
+
+Certifique-se de substituir `"exemplo-video.mp4"` pelo caminho correto para o seu arquivo de vídeo. Esse exemplo demonstra como você pode incorporar um vídeo em sua página usando a tag `<video>` em HTML para aproveitar o Rich Media.
 
 
 ##### Objetivos da Unidade:
