@@ -750,6 +750,3 @@ Para orientação do dispositivo, use `@media (orientation: valor) {...}`. "valo
 - Media Queries
 
 
-____________________
-
-**Referências:**
