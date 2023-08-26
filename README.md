@@ -504,20 +504,57 @@ Os botões de envio são essenciais para submeter dados de formulários. Eles s�
 
 
 
-#### Tags de formulários
+#### Tags de Formulários
+
+Os formulários HTML são essenciais para interação e coleta de informações. Eles usam tags para criar campos, botões e elementos interativos, aprimorando a experiência do usuário.
+
+A tag `<form>` delimita o formulário e possui atributos como "action" (processamento) e "method" (envio de dados).
+
+Exemplo de código de formulário em HTML:
+
+```html
+<form action="/script.php" method="POST">
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="mensagem">Mensagem:</label>
+  <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+  <button type="submit">Enviar</button>
+</form>
+
+```
+
+Tags dentro de `<form>`:
+
+- `<input>` cria campos variados, como texto e checkboxes.
+- `<button>` cria botões, inclusive envio ou customizados.
+- `<label>` gera rótulos para campos.
+- `<select>` e `<option>` criam dropdowns de seleção.
+- `<textarea>` permite texto multilinhas.
+
+Essas tags, combinadas com CSS e JavaScript, oferecem interatividade e personalização. Utilizá-las adequadamente garante formulários funcionais e seguros para coletar dados essenciais.
+
+
+#### Tags de Bloco e CSS
+
+
 
 
 
 ##### Objetivos da Unidade:
 
 - Tabelas em HTML
-- Estrutura da tabela em HTML
+- Estrutura da Tabela em HTML
 - Tabelas e CSS
 - Formulários em HTML
-- Tags de formulários
-- Tags de bloco e CSS
+- Tags de Formulários
+- Tags de Bloco e CSS
 - Content, Padding, Border e Margin
-- Regras de estado em CSS
+- Regras de Estado em CSS
 - Rich Media: Áudio e Vídeo
 
 
