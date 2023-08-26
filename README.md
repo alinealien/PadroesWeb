@@ -318,7 +318,6 @@ body {
 Neste caso, o fundo da página inteira terá uma cor cinza claro definida pelo código hexadecimal "#f2f2f2". Além da cor, você pode adicionar uma imagem de fundo usando a propriedade "background-image". Por exemplo:
 
 ```css
-css
 body {
   background-image: url(caminho/para/imagem.jpg);
 }
@@ -345,7 +344,167 @@ _______________
 
 
 
+#### Tabelas em HTML
 
+As tabelas são elementos estruturais essenciais no **HTML**, permitindo a organização e exibição de dados em linhas e colunas de forma clara e sistemática. Uma das principais vantagens das tabelas é a capacidade de visualizar dados comparativos. Ao dispor informações lado a lado, torna-se mais fácil analisar e entender padrões, diferenças e tendências entre os dados apresentados.
+
+Outra aplicação prática das tabelas é a exibição de listas de informações. Quando temos dados categorizados, como listas de produtos, características ou eventos, as tabelas oferecem uma maneira ordenada e concisa de apresentá-los. Os usuários podem facilmente encontrar o que procuram e comparar as informações de interesse.
+
+Além disso, as tabelas são ideais para criar calendários. Ao organizar datas em colunas e dias da semana em linhas, os calendários se tornam mais legíveis e facilitam o planejamento e acompanhamento de 
+eventos, prazos e compromissos. Entretanto, é importante evitar o uso excessivo de tabelas para fins de layout. 
+
+#### Estrutura da tabela em HTML
+
+A estrutura de uma tabela em HTML é fundamental para organizar e apresentar informações de maneira clara e acessível. A tabela é delimitada pela tag `<table>`, a qual marca o início do elemento tabular. O conteúdo contido dentro desta tag é estruturado em três seções principais: o cabeçalho `(<thead>)`, o corpo `(<tbody>)` e o rodapé `(<tfoot>)`. A adoção dessa divisão, embora opcional, é altamente recomendada, uma vez que confere à tabela maior semântica, facilitando a compreensão por leitores de tela e a indexação por mecanismos de busca.
+
+A construção de linhas na tabela é realizada por meio da tag `<tr>` (table row), onde cada linha representa um conjunto horizontal de células. As células individuais são inseridas dentro das linhas utilizando as tags `<td>` (table data) e `<th>` (table header). A tag `<td>` é empregada para criar células regulares que contêm os dados da tabela. Em contraste, a tag `<th>` é utilizada para desenvolver os cabeçalhos de coluna, ou seja, os títulos que representam as informações contidas nas células abaixo deles. Essa distinção entre `<td>` e `<th>` também se revela valiosa para a estilização adequada da tabela, permitindo a aplicação de diferentes estilos aos cabeçalhos, caso necessário. Exemplo a seguir:
+
+```html
+<table> <!--Abre Tabela-->
+    <thead> <!-- Defini os cabeçalho da tabela -->
+        <tr> <!--Cria uma linha-->
+            <th>Produto</th> <!--Cria cabeçalhos-->
+            <th>Preço</th> <!--Cria cabeçalhos-->
+            <th>Disponibilidade</th> <!--Cria cabeçalhos-->
+        </tr> <!--Fecha a Linha-->
+    </thead> <!--Fecha o cabeçalho-->
+    <tbody> <!-- Defini o corpo da tabela. -->
+        <tr> <!--Cria outra linha-->
+            <td>Camiseta branca</td> <!--Cria células(colunas)-->
+            <td>R$ 29,99</td> <!--Cria células(colunas)-->
+            <td>Em estoque</td> <!--Cria células(colunas)-->
+        </tr>  <!--Fecha a Linha-->
+        <tr> <!--Cria outra linha-->
+            <td>Calça jeans</td> <!--Cria células(colunas)-->
+            <td>R$ 59,99</td> <!--Cria células(colunas)-->
+            <td>Esgotado</td> <!--Cria células(colunas)-->
+        </tr>  <!--Fecha a Linha-->
+        <tr><!--Cria outra linha-->
+            <td>Tênis esportivo</td> <!--Cria células(colunas)-->
+            <td>R$ 89,90</td> <!--Cria células(colunas)-->
+            <td>Em estoque</td> <!--Cria células(colunas)-->
+        </tr>  <!--Fecha a Linha-->
+    </tbody>  <!--Fecha o corpo da tabela-->
+</table> <!--Fecha Tabela-->
+
+```
+
+Uma característica importante das tabelas é a possibilidade de mesclar células, o que pode ser feito utilizando os atributos `colspan` e `rowspan`. O atributo **colspan permite mesclar horizontalmente células** que se estendem por mais de uma coluna. Enquanto isso, o atributo r**owspan possibilita a mesclagem vertical de células**, abrangendo mais de uma linha. Essa funcionalidade é especialmente útil quando queremos destacar informações importantes ou simplificar a apresentação dos dados. 
+
+
+
+#### Tabelas e CSS
+
+As tabelas HTML, quando combinadas com CSS, oferecem um potencial ampliado de personalização e melhoria de layout. O CSS permite definir cores de fundo, espaçamento e bordas, contribuindo para uma apresentação atraente e legível das tabelas. Além disso, é possível aplicar estilos específicos a cabeçalhos e rodapés, realçando essas seções com cores distintas e fontes diferenciadas. Destacar células com estilos personalizados é outra vantagem, permitindo a aplicação de cores específicas a valores relevantes ou acima de um limiar, direcionando o foco para informações cruciais. Além disso, o CSS facilita a gestão de conteúdo com rolagem horizontal, útil quando a tabela possui muitas colunas, evitando distorções no layout ao adicionar uma barra de rolagem horizontal.
+
+```css
+/* Estilo para a tabela com rolagem horizontal */
+.scrollable-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+```
+
+
+
+```html
+<!-- No corpo do documento HTML -->
+<div class="scrollable-table">
+  <table>
+    <!-- Conteúdo da tabela aqui -->
+  </table>
+</div>
+```
+
+Neste exemplo, a classe `scrollable-table` é usada para criaruma tabela com rolagem horizontal quando o conteúdo excede a largura da tela. Isso mantém o layout da tabela intacto e permite que os usuários visualizem todas as informações com facilidade.
+
+
+#### Formulários em HTML
+
+Os formulários em **HTML **são elementos essenciais nas páginas da web, pois desempenham um papel fundamental na coleta de informações dos usuários. Eles possibilitam a criação de campos de entrada, botões de envio e outros elementos interativos que tornam a experiência do usuário mais dinâmica e participativa. Os formulários também podem conter opções de escolha, como botões de rádio e caixas de seleção, que permitem aos usuários fazerem escolhas entre diversas opções pré-definidas. 
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  form {
+    width: 400px;
+    margin: auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .align-right {
+    text-align: right;
+  }
+
+  button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<h2>Formulário</h2>
+
+<form>
+  <label for="name">Nome:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email" required>
+
+  <label for="message">Mensagem:</label>
+  <textarea id="message" name="message" rows="6" required></textarea>
+
+  <div class="align-right">
+    <button type="submit">Enviar</button>
+  </div>
+</form>
+
+</body>
+</html>
+
+```
+
+Os botões de envio são essenciais para submeter dados de formulários. Eles são fundamentais em sistemas de login, envio de mensagens e interações importantes. Formulários podem ter elementos interativos, como campos de data e seletores de arquivos, melhorando a interação. A segurança e a conformidade com políticas de privacidade são cruciais ao lidar com dados coletados por formulários.
+
+
+
+#### Tags de formulários
 
 
 
