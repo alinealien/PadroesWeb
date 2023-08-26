@@ -568,12 +568,15 @@ A seleção correta entre essas categorias garante a hierarquia visual e o layou
 
 #### Content, Padding, Border e Margin
 
-A estrutura espacial na página **HTML **de uma `tag` de bloco é composta por quatro principais áreas:
+A estrutura espacial na página HTML de uma `tag` de bloco é composta por quatro principais áreas:
 
 
-![Exmp Pagina](https://raw.githubusercontent.com/alinealien/PadroesWeb/main/paginahtml_margins.png)
+<p align="center"><img src="https://raw.githubusercontent.com/alinealien/PadroesWeb/main/paginahtml_margins.png" alt="Exemplo de Página HTML"></p>
 
-m uma tag de bloco, temos três elementos essenciais:
+
+
+
+Em uma tag de bloco, temos três elementos essenciais:
 
 1. **Conteúdo**: O núcleo da tag, exibindo texto, imagens ou outros elementos. É a parte visível do elemento na página.
 2. **Preenchimento**: Espaço entre o conteúdo e a borda. Acrescenta espaço interno e destaque ao conteúdo.
