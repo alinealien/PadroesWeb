@@ -1,0 +1,122 @@
+/*Utilizando váriaveis no CSS*/
+/*Se quiser fazer alguma alteração ao longo do site, em vez de valor fixo, coloca-se em variaveis*/
+/*assim, poderá ir alterando a variavel vocÊ altera todos os valores depois*/
+:root{
+    --cor-1: #1d44af;
+    --cor-2: #0077ff;
+    --cor-3: #fff4d7;
+    --cor-4: #244f52;
+}
+
+*{
+/*Para evitar que seja inserido pelo browser uma (padding, margin, border)*/
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #eee;
+}
+
+#main{
+    width: 1200px;
+    min-height: 800px;
+    box-shadow: 0 0 15px #00000070;
+    background-color: #eee;
+    margin: auto;
+}
+
+header{
+    background-color: var(--cor-1);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.logo h1{
+    margin: 0 30px;
+}
+
+.search input{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 14px;
+    background-color: #00000030;
+    color: #ffffff70;
+}
+
+/*situação do input [::nome] é a regra*/
+.search input::placeholder{
+color: #ffffff80;
+}
+
+.search input:focus{
+    outline: 0;
+}
+
+.banner{
+    background-image: url(midia/banner.jpg);
+    background-size:cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px;
+    box-shadow: 0 0 1000px var(--cor-4) inset;
+}
+
+.banner2{
+    background-image: url(midia/banner2.jpg);
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card{
+    text-align: center;
+    padding: 20px;
+    background-color: var(--cor-3);
+    box-shadow: 0 4px 8px #00000070;
+}
+
+.card img{
+    max-height: 200px;
+}
+
+.text-area{
+display: flex;
+justify-content: space-between;
+margin: 20px;
+padding: 20px;
+}
+
+.coluna{
+flex: 1;
+padding: 20px;
+text-align: justify;
+}
+
+.coluna h2{
+    margin: 20px 0;
+}
+
+footer{
+    background-color: var(--cor-4);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
