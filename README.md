@@ -1,4 +1,4 @@
-# PADRÕES WEB
+# Padrões Web
 
 Repositório de estudos e projetos desenvolvidos durante a disciplina de **Padrões Web** do curso de Tecnologia em Sistemas para Internet do IFRN.
 
